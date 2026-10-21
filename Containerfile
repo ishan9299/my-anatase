@@ -1,4 +1,4 @@
-FROM i.anatase.org/anatase:stable
+FROM i.anatase.org/base:rolling
 
 # Do your thing...
 # Install btop
