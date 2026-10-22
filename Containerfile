@@ -25,7 +25,7 @@ RUN . /etc/os-release && \
     virt-manager \
     virglrenderer
 
-systemctl enable libvirtd
+RUN systemctl enable libvirtd
 
 COPY files/ /
 
