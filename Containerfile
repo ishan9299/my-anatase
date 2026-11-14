@@ -1,4 +1,4 @@
-FROM i.anatase.org/anatase:rolling
+FROM i.anatase.org/anatase:stable
 
 # Do your thing...
 # Install btop
@@ -16,6 +16,8 @@ RUN . /etc/os-release && \
     wl-clipboard \
     stow \
     ripgrep \
+    fd-find \
+    tree-sitter-cli \
     @virtualization \
     clang \
     gcc \
