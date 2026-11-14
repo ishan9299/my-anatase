@@ -11,12 +11,12 @@ on:
   # - Consider the environment and resources you use when you build
   #   the image unnecessarily.
   #
-  # schedule:
-  #   - cron: '00 07 * * 1,3,5' # Monday, Wednesday, Friday at 07:00 UTC
+  schedule:
+    - cron: '00 07 * * 1,3,5' # Monday, Wednesday, Friday at 07:00 UTC
   
   # Enable below to run this action when you push changes
-  # push:
-  #   branches: [master, main]
+  push:
+    branches: [master, main]
 
   # This allows you to manually run the action through the GitHub Actions UI
   workflow_dispatch:
