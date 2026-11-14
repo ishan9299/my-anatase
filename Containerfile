@@ -1,4 +1,4 @@
-FROM i.anatase.org/anatase:stable
+FROM i.anatase.org/anatase:rolling
 
 # Do your thing...
 # Install btop
@@ -13,10 +13,12 @@ FROM i.anatase.org/anatase:stable
 
 RUN . /etc/os-release && \
     dnf -y --setopt=install_weak_deps=False install \
+    wl-clipboard \
+    stow \
+    ripgrep \
     @virtualization \
     clang \
     gcc \
-    python \
     make \
     cmake \
     ninja \
